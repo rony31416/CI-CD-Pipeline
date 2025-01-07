@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22' # Use LTS version or a compatible version for your dependencies
+          node-version: '22' 
 
       # Step 3: Install dependencies
       - name: Install dependencies
@@ -33,4 +33,4 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          npx vercel deploy --prod --token $VERCEL_TOKEN
+          npx vercel deploy --prod --token $VERCEL_TOKEN --yes
