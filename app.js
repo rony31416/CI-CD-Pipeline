@@ -9,7 +9,7 @@ app.get('/home', (req, res) => {
 // Endpoint: /user
 app.get('/user', (req, res) => {
   res.json({
-    name: 'John Doe',
+    name: 'John',
     email: 'john.doe@example.com',
   });
 });
