@@ -33,4 +33,4 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.rony}} # Use a descriptive name for your secret
         run: |
-          npx vercel deploy --prod
+          npx vercel deploy --prod --token $rony
