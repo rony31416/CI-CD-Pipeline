@@ -10,22 +10,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout code
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Step 2: Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '22' # Use LTS version or a compatible version for your dependencies
 
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
+      # Step 4: Run tests
       - name: Run tests
-        run: npm test
+        run: npm test -- --detectOpenHandles --forceExit
 
+      # Step 5: Deploy to Vercel
       - name: Deploy to Vercel
         env:
-          VERCEL_TOKEN: ${{ secrets.rony}}
+          VERCEL_TOKEN: ${{ secrets.rony}} # Use a descriptive name for your secret
         run: |
           npx vercel deploy --prod
