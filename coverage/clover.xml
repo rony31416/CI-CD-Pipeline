@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1736222683733" clover="3.2.0">
-  <project timestamp="1736222683733" name="All files">
+<coverage generated="1736226138160" clover="3.2.0">
+  <project timestamp="1736226138160" name="All files">
     <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3" elements="15" coveredelements="15" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
     <file name="app.js" path="/home/iit/Desktop/New Folder/CI-CD-Pipeline/app.js">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
